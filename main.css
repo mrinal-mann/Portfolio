@@ -1,0 +1,105 @@
+body{
+   margin: 0px; 
+}
+/* header navigation */
+#header{
+    background-image: url(macbook_mouse.jpg);
+    height: 65vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+.horizontallist{
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+    margin: 0;
+}
+.horizontallist li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+} 
+.horizontallist li a{
+    text-decoration: none;
+    color: rgb(191, 205, 212);
+    font-size: 20px;
+}
+.navmenu li{
+    margin-top: 8px;
+}
+.navmenu li a{
+    transition: color 0.4s,border-bottom 4s;
+}
+.navmenu li a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+}
+/* header and icon */
+#headerandicon{
+    margin-bottom: 20vh;
+}
+#header h1 {
+    margin-left: 33%;
+    margin-top: 10%;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+    font-size: 73px;
+    color: rebeccapurple;
+    display: inline-block;
+}
+#header h1:hover{
+    color: rgb(46, 25, 18);
+    border-bottom: 2px solid rgb(66, 39, 39);
+    transition: color 0.4s, border-bottom 0.1s;
+}
+.headericonlist{
+    text-align: center;
+
+}
+.headericonlist li{
+    display: inline-block;
+}
+.socialicons li a i{
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.socialicons li a i:hover{
+    box-shadow: 0px 0px 6px 4px grey;
+}
+/* main */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#myimage{
+    margin: auto;
+    height: 12rem;
+    width: 12rem;
+    margin-top: -15vh;
+}
+#myimage img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#myimage img:hover{
+    box-shadow: 0px 0px 6px 4px grey;
+}
+#about p{
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 28px;
+    color: grey;
+    padding: 10px
+}
+.texthighlight{
+    color: skyblue;
+    font-weight: 800;
+}
