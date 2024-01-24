@@ -2,6 +2,21 @@ body{
    margin: 0px; 
 }
 /* header navigation */
+#portfolio{
+    margin: 0;
+    display: inline-block;
+}
+#portfolio h3{
+    color: rgb(233, 17, 17);
+    font-size: 25px;
+    margin: 0;
+}
+#portfolio h3:hover{
+    color: brown;
+    transition: color 0.4s;
+}
+
+
 #header{
     background-image: url(macbook_mouse.jpg);
     height: 65vh;
@@ -102,4 +117,25 @@ body{
 .texthighlight{
     color: skyblue;
     font-weight: 800;
+}
+#download{
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+#download button{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    border-radius: 10px 10px 10px 10px;
+    border: 0;
+    box-shadow: 0px 0px 4px 4px grey;
+    color: skyblue;
+    background-color: whitesmoke;
+}
+#download button:hover{
+    background-color: rgb(255, 192, 192);
 }
