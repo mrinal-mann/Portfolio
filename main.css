@@ -1,149 +1,229 @@
-body{
-   margin: 0px; 
+body {
+  margin: 0px;
 }
 /* header navigation */
-#portfolio{
-    margin: 0;
-    display: inline-block;
+#portfolio {
+  margin: 0;
+  display: inline-block;
+}
+#portfolio h3 {
+  color: rgb(233, 17, 17);
+  font-size: 28px;
+  margin: 0;
+}
+#portfolio h3:hover {
+  color: brown;
+  transition: color 0.4s;
+}
 
+#header {
+  background-image: url(macbook_mouse.jpg);
+  height: 65vh;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  background-attachment: fixed;
 }
-#portfolio h3{
-    color: rgb(233, 17, 17);
-    font-size: 28px;
-    margin: 0;
+.horizontallist {
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+  margin-top: 0;
 }
-#portfolio h3:hover{
-    color: brown;
-    transition: color 0.4s;
+#header_nav .horizontallist {
+  width: 50%;
+  display: inline-block;
+  margin-left: 245px;
 }
-
-
-#header{
-    background-image: url(macbook_mouse.jpg);
-    height: 65vh;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.8;
-    background-attachment: fixed;
+.horizontallist li {
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
 }
-.horizontallist{
-    list-style: none;
-    padding-left: 0px;
-    text-align: center;
-    margin-top: 0;
+.horizontallist li a {
+  text-decoration: none;
+  color: rgb(191, 205, 212);
+  font-size: 20px;
 }
-#header_nav .horizontallist{
-    width: 50%;
-    display: inline-block;
-    margin-left: 245px;
+.navmenu li {
+  margin-top: 8px;
 }
-.horizontallist li{
-    display: inline-block;
-    margin: 0px 8px 8px 0px;
-} 
-.horizontallist li a{
-    text-decoration: none;
-    color: rgb(191, 205, 212);
-    font-size: 20px;
+.navmenu li a {
+  transition: color 0.4s, border-bottom 4s;
 }
-.navmenu li{
-    margin-top: 8px;
-}
-.navmenu li a{
-    transition: color 0.4s,border-bottom 4s;
-}
-.navmenu li a:hover{
-    color: rgb(0, 0, 0);
-    border-bottom: 1px solid black;
+.navmenu li a:hover {
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid black;
 }
 /* header and icon */
-#headerandicon{
-    margin-bottom: 20vh;
+#headerandicon {
+  margin-bottom: 20vh;
 }
 #header h1 {
-    margin-left: 33%;
-    margin-top: 10%;
-    margin-bottom: 0.2rem;
-    letter-spacing: 0.1rem;
-    font-weight: 800;
-    font-size: 73px;
-    color: rebeccapurple;
-    display: inline-block;
+  margin-left: 33%;
+  margin-top: 10%;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+  font-size: 73px;
+  color: rebeccapurple;
+  display: inline-block;
 }
-#header h1:hover{
-    color: rgb(46, 25, 18);
-    border-bottom: 2px solid rgb(66, 39, 39);
-    transition: color 0.4s, border-bottom 0.1s;
+#header h1:hover {
+  color: rgb(46, 25, 18);
+  border-bottom: 2px solid rgb(66, 39, 39);
+  transition: color 0.4s, border-bottom 0.1s;
 }
-.headericonlist{
-    text-align: center;
-
+.headericonlist {
+  text-align: center;
 }
-.headericonlist li{
-    display: inline-block;
+.headericonlist li {
+  display: inline-block;
 }
-.socialicons li a i{
-    color: white;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    padding: 10px;
+.socialicons li a i {
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 10px;
 }
-.socialicons li a i:hover{
-    box-shadow: 0px 0px 6px 4px grey;
+.socialicons li a i:hover {
+  box-shadow: 0px 0px 6px 4px grey;
 }
 /* main */
-#about{
-    height: auto;
-    width: 100%;
-    position: relative;
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#myimage{
-    margin: auto;
-    height: 12rem;
-    width: 12rem;
-    margin-top: -15vh;
-    object-fit: cover;
+section:nth-child(2n) {
+  background-color: lightgray;
 }
-#myimage img{
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    /* object-fit: contain; */
+section:nth-child(2n + 1) {
+  background-color: white;
 }
-#myimage img:hover{
-    box-shadow: 0px 0px 6px 4px grey;
+.sectionheading {
+  width: auto;
+  font-weight: 700;
+  padding: 20px 10px 10px;
 }
-#about p{
-    margin: auto;
-    width: 70%;
-    text-align: justify;
-    font-size: 1.1rem;
-    line-height: 28px;
-    color: grey;
-    padding: 10px
+.sectionheading span {
+  font-size: 40px;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
 }
-.texthighlight{
-    color: skyblue;
-    font-weight: 800;
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
 }
-#download{
-    text-align: center;
-    width: 100%;
-    display: inline-block;
+#myimage {
+  margin: auto;
+  height: 12rem;
+  width: 12rem;
+  margin-top: -15vh;
+  object-fit: cover;
 }
-#download button{
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 8px;
-    line-height: 20px;
-    letter-spacing: 1px;
-    font-weight: 800;
-    border-radius: 10px 10px 10px 10px;
-    border: 0;
-    box-shadow: 0px 0px 4px 4px grey;
-    color: skyblue;
-    background-color: whitesmoke;
+#myimage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  /* object-fit: contain; */
 }
-#download button:hover{
-    background-color: rgb(255, 192, 192);
+#myimage img:hover {
+  box-shadow: 0px 0px 6px 4px grey;
+}
+#about p {
+  margin: auto;
+  width: 70%;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 28px;
+  color: grey;
+  padding: 10px;
+}
+.texthighlight {
+  color: skyblue;
+  font-weight: 800;
+}
+#download {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+#download button {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 8px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  border-radius: 10px 10px 10px 10px;
+  border: 0;
+  box-shadow: 0px 0px 4px 4px grey;
+  color: skyblue;
+  background-color: whitesmoke;
+}
+#download button:hover {
+  background-color: rgb(255, 192, 192);
+}
+.viewport {
+  margin-bottom: 75px;
+}
+/* prercentage  */
+.skillsdisplay {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.parent1 {
+  background-color: cyan;
+  height: inherit;
+  width: 85%;
+}
+.parent2 {
+  background-color: cadetblue;
+  width: 60%;
+  height: inherit;
+}
+.skillprogress {
+  width: 11rem;
+  height: 2.2rem;
+  background-color: rgb(153, 153, 153);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+  margin: 25px;
+  overflow: hidden;
+}
+.skillprogress > div {
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: 1px 1px 5px 2px #989882;
+}
+.skillname span {
+  font-size: 1.3rem;
+  color: white;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.parent3 {
+  background-color: rgb(192, 150, 61);
+  width: 50%;
+  height: inherit;
+}
+.parent4 {
+  background-color: rgb(27, 161, 94);
+  width: 70%;
+  height: inherit;
+}
+.parent5 {
+  background-color: rgb(50, 72, 73);
+  width: 50%;
+  height: inherit;
+}
+.parent6 {
+  background-color: rgb(121, 51, 153);
+  width: 69%;
+  height: inherit;
 }
