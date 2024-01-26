@@ -96,7 +96,7 @@ section {
   align-items: center;
 }
 section:nth-child(2n) {
-  background-color: lightgray;
+  background-color: rgb(245, 245, 245);
 }
 section:nth-child(2n + 1) {
   background-color: white;
@@ -105,12 +105,16 @@ section:nth-child(2n + 1) {
   width: auto;
   font-weight: 700;
   padding: 20px 10px 10px;
+  margin: 50px 0 50px;
+  font-size: 40px;
+  color: skyblue;
 }
 .sectionheading span {
-  font-size: 40px;
+  font-size: 50px;
   display: inline-block;
   padding-top: 10px;
   margin-right: 0.5rem;
+  color: skyblue;
 }
 #about {
   height: auto;
@@ -189,10 +193,10 @@ section:nth-child(2n + 1) {
   height: inherit;
 }
 .skillprogress {
-  width: 11rem;
-  height: 2.2rem;
+  width: 12rem;
+  height: 2.5rem;
   background-color: rgb(153, 153, 153);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
   margin: 25px;
   overflow: hidden;
@@ -206,6 +210,13 @@ section:nth-child(2n + 1) {
   color: white;
   margin-left: 10px;
   vertical-align: middle;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255)
+}
+.skillname{
+  display: inline-block;
+  margin-top: 0.5rem;
 }
 .parent3 {
   background-color: rgb(192, 150, 61);
