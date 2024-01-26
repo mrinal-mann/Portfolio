@@ -101,21 +101,6 @@ section:nth-child(2n) {
 section:nth-child(2n + 1) {
   background-color: white;
 }
-.sectionheading {
-  width: auto;
-  font-weight: 700;
-  padding: 20px 10px 10px;
-  margin: 50px 0 50px;
-  font-size: 40px;
-  color: skyblue;
-}
-.sectionheading span {
-  font-size: 50px;
-  display: inline-block;
-  padding-top: 10px;
-  margin-right: 0.5rem;
-  color: skyblue;
-}
 #about {
   height: auto;
   width: 100%;
@@ -171,26 +156,32 @@ section:nth-child(2n + 1) {
 #download button:hover {
   background-color: rgb(255, 192, 192);
 }
+/* margins */
 .viewport {
   margin-bottom: 75px;
 }
-/* prercentage  */
+/* About Section Flex  */
+.sectionheading {
+  width: auto;
+  font-weight: 700;
+  padding: 20px 10px 10px;
+  margin: 50px 0 50px;
+  font-size: 40px;
+  color: skyblue;
+}
+.sectionheading span {
+  font-size: 50px;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+  color: skyblue;
+}
 .skillsdisplay {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 30px;
-}
-.parent1 {
-  background-color: cyan;
-  height: inherit;
-  width: 85%;
-}
-.parent2 {
-  background-color: cadetblue;
-  width: 60%;
-  height: inherit;
 }
 .skillprogress {
   width: 12rem;
@@ -218,6 +209,16 @@ section:nth-child(2n + 1) {
   display: inline-block;
   margin-top: 0.5rem;
 }
+.parent1 {
+  background-color: cyan;
+  height: inherit;
+  width: 85%;
+}
+.parent2 {
+  background-color: cadetblue;
+  width: 60%;
+  height: inherit;
+}
 .parent3 {
   background-color: rgb(192, 150, 61);
   width: 50%;
@@ -237,4 +238,62 @@ section:nth-child(2n + 1) {
   background-color: rgb(121, 51, 153);
   width: 69%;
   height: inherit;
+}
+
+/* Portfolio Section Flex */
+.portfolioheader{
+  width: auto;
+  font-size: 40px;
+  padding: 20px 10px 20px;
+  margin: 50px 0 50px;
+  color: darkseagreen;
+  font-weight: 700;
+}
+.portfolioheader>span{
+  font-size: 50px;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+.portfoliodisplay{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-bottom: 50px;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+.portfolioresult{
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+}
+.portfolioresult img{
+  height: 100%;
+  width: 100%;
+}
+.portfoliodetails{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  text-align: center;
+  transition: all 0.5s ease-in-out 0s;
+  color: transparent;
+}
+.portfoliodetails p{
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px;
+}
+.portfolioresult:hover{
+  box-shadow: 0 0 20px rgb(122, 122, 204);
+}
+.portfolioresult:hover .portfoliodetails{
+  background-color: #9999739f;
+  color: white;
 }
