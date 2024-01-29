@@ -304,6 +304,68 @@ section:nth-child(2n + 1) {
   background-color: #9999739f;
   color: white;
 }
+ /* experience */
+#experiencecontainer{
+  position: relative;
+  width: 75%;
+  border: 2px solid black;
+}
+.timeline{
+  position: absolute;
+  width: 0;
+  top: 10%;
+  left: 50%;
+  height: 70%;
+  border: 1px dashed blue;
+  color: #f8f8f8;
+}
+.experiencebox{
+  position: relative;
+  min-height: 200px;
+  left: 5%;
+  width: 40%;
+  border: 1px solid black;
+  margin: 2px;
+  padding: 5px;
+}
+.experiencebox:nth-child(2n){
+  position: relative;
+  left: 55%;
+}
+.experiencetimeline{
+  padding: 8px;
+}
+.experienceimage{
+  position:absolute;
+  width: 50px;
+  overflow: hidden;
+
+}
+.experienceimage>img{
+  width: 100%;
+}
+.experiencedesignation{
+  margin: 0;
+  font-size: 2rem;
+  color: #2857a4;
+  text-align: right;
+}
+.experiencecompany{
+  text-align: right;
+  color: orange;
+  font-size: 1.5rem;
+  margin: 5px 0 0;
+}
+.companyduration{
+  text-align: right;
+  color: black;
+  margin: 0;
+  font-size: 1.1rem;
+}
+.experiencedetails{
+  text-align: justify;
+}
+
 
 /* Contact */
 #contact {
