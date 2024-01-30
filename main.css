@@ -396,6 +396,79 @@ section:nth-child(2n + 1) {
 }
 
 
+/* Education */
+#educationcontainer{
+  position: relative;
+  width: 75%;
+}
+.educationbox{
+  position: relative;
+  min-height: 200px;
+  left: 5%;
+  width: 40%;
+  margin: 2px;
+  padding: 5px;
+}
+.educationbox:nth-child(odd):after{
+  content: '';
+  background-color:lightgray;
+  position: absolute;
+  top: 37%;
+  right:-11%;
+  height: 0.8rem;
+  width: 0.8rem;
+  z-index: 1;
+  border-radius: 50%;
+}
+.educationbox:nth-child(even):after{
+  content: '';
+  background-color: lightgray;
+  position: absolute;
+  top: 35%;
+  left:-13.7%;
+  height: 0.8rem;
+  width: 0.8rem;
+  z-index: 1;
+  border-radius: 50%;
+}
+.educationbox:nth-child(2n){
+  position: relative;
+  left: 55%;
+}
+.educationtimeline{
+  padding: 8px;
+}
+/* .educationimage{
+  position:absolute;
+  width: 50px;
+  overflow: hidden;
+}
+.educationimage>img{
+  width: 100%;
+} */
+.educationdesignation{
+  margin: 0;
+  font-size: 2rem;
+  color: #2857a4;
+  text-align: right;
+}
+.educationcompany{
+  text-align: right;
+  color: orange;
+  font-size: 1.5rem;
+  margin: 5px 0 0;
+}
+.educationduration{
+  text-align: right;
+  color: black;
+  margin-top: 7px;
+  font-size: 1.1rem;
+}
+.educationdetails{
+  text-align: justify;
+}
+
+
 /* Contact */
 #contact {
   color: white;
